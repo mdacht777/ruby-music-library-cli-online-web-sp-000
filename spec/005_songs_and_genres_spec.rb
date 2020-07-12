@@ -64,7 +64,7 @@ describe "Associations — Song and Genre:" do
     end
 
     describe "#initialize" do
-      xit "invokes #genre= instead of simply assigning to a @genre instance variable to ensure that associations are created upon initialization" do
+      it "invokes #genre= instead of simply assigning to a @genre instance variable to ensure that associations are created upon initialization" do
         artist = Artist.new("Neutral Milk Hotel")
 
         expect_any_instance_of(Song).to receive(:genre=).with(genre)
