@@ -24,7 +24,6 @@ class Genre
     @songs
   end
   def add_song(song)
-    # binding.pry
     song.genre=self if song.genre==""
     @songs << song if !@songs.include?(song)
   end
