@@ -10,7 +10,7 @@ class Song
     # @genre=genre
     self.artist=artist
     self.genre=genre
-    # save
+    save
   end
   def self.all
     @@all
