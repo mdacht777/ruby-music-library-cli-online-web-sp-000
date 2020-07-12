@@ -36,7 +36,7 @@ class Song
   def genre=(a)
     if a != ""
       @genre = a
-      artist.add_song(self)
+      genre.add_song(self)
     else
       @genre = ""
     end
