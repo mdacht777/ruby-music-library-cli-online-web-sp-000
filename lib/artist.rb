@@ -33,11 +33,11 @@ class Artist
     # # binding.pry
     # # @artist=self
     # # @songs << song if !@songs.include?(song)
-    # if song.artist == ""
-    #   song.artist = self
-    # elsif @songs.include?(song) == false
-    #   @songs << song
-    # end
+    if song.artist == ""
+      song.artist = self
+    elsif @songs.include?(song) == false
+      @songs << song
+    end
   end
   def genres
     Genre.all
