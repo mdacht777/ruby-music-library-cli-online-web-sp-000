@@ -28,11 +28,9 @@ class Song
     song
   end
   def artist=(a)
-    @artist=a
-    # Artist.add_song(self)
-    b=Artist.new(a)
-    b.add_song(self)
-    # save
+    if a==""
+    else
+    end
   end
   def genre=(a)
     @genre=a
