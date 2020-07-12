@@ -28,16 +28,20 @@ class Song
     song
   end
   def artist=(a)
-    if a==""
+    if a != ""
+      @artist = a
+      artist.add_song(self)
     else
+      @artist = ""
     end
   end
   def genre=(a)
-    @genre=a
-    # Genre.add_song(self)
-    b=Genre.new(a)
-    b.add_song(self)
-    # save
+    if a != ""
+      @genre = a
+      artist.add_song(self)
+    else
+      @genre = ""
+    end
   end
   def self.new_from_filename(file)
     # puts file
