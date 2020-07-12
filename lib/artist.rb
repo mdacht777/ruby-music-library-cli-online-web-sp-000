@@ -25,19 +25,8 @@ class Artist
     @songs
   end
   def add_song(song)
-    # song.artist.name=song.artist
     song.artist=self if song.artist==""
-    # binding.pry
-    # # @artist=self
     @songs << song if !@songs.include?(song)
-    # # binding.pry
-    # # @artist=self
-    # # @songs << song if !@songs.include?(song)
-    # if song.artist == ""
-    #   song.artist = self
-    # elsif @songs.include?(song) == false
-    #   @songs << song
-    # end
   end
   def genres
     Genre.all
