@@ -50,6 +50,7 @@ class Song
     song.genre=genre
     # artist.add_song(self)
     song.save
+    song
   end
   def self.create_from_filename(file)
     # puts file
